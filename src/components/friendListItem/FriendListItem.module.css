@@ -1,13 +1,14 @@
-.status {
+.isOnline {
   display: inline-block;
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background: pink;
-}
-.status.isOnline {
   background: green;
 }
-.status.isOffline {
+.isOffline {
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
   background: red;
 }

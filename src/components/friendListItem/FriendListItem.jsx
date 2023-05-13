@@ -1,12 +1,10 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import css from "./FriendListItem.module.css";
-import clsx from "clsx";
+
 const FriendListItem = ({ avatar, name, isOnline, id }) => {
-  const checkStatus = clsx("status", isOnline ? "isOnline" : "isOffline");
-  console.log(checkStatus);
   return (
     <li key={id}>
-      <span className="{checkStatus}"></span>
+      <span className={isOnline ? css.isOnline : css.isOffline}></span>
       <img
         src={avatar}
         alt={`${name} avatar`}
@@ -17,6 +15,11 @@ const FriendListItem = ({ avatar, name, isOnline, id }) => {
   );
 };
 
-// FriendListItem.propTypes = {};
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  id: PropTypes.number.isRequired,
+};
 
 export default FriendListItem;
