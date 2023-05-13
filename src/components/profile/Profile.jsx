@@ -5,7 +5,7 @@ const Profile = ({ username, tag, location, avatar, stats: { followers, views, l
     <div>
       <img
         src={avatar}
-        alt="User avatar"
+        alt={`${username} avatar`}
       />
       <p>{username}</p>
       <p>{tag}</p>
