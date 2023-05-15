@@ -4,8 +4,8 @@ import css from "./FriendList.module.css";
 
 const FriendList = ({ friends }) => {
   return (
-    <section className={css.friendList}>
-      <ul>{friends.map(FriendListItem)}</ul>
+    <section className={css.friendSection}>
+      <ul className={css.friendList}>{friends.map(FriendListItem)}</ul>
     </section>
   );
 };

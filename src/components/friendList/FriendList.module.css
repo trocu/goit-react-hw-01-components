@@ -1,8 +1,14 @@
-.friendList {
+.friendSection {
   width: 250px;
   border-radius: 5px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   background: #fff;
+  box-sizing: border-box;
+  padding: 10px;
 }
-
+.friendList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
