@@ -22,6 +22,14 @@
   background: #f3f6f9;
   border-radius: 0 0 5px 5px;
 }
+.statItem {
+  padding-block: 20px;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  flex-basis: calc(100% / 5);
+}
 .label {
   font-size: 11px;
   font-weight: 400;
